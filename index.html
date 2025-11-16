@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BPT Portfolio — Mohammad Shakir Sufi</title>
+  <meta name="description" content="Physiotherapy (BPT) student portfolio — clinical experience, skills, projects, contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#6366f1;
+      --accent2:#ec4899;
+      --muted:#6b7280;
+      --bg:#f0f4ff;
+      --card:#ffffff;
+      --radius:16px;
+      font-family: 'Inter', system-ui;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(145deg,#dbe4ff,#f0f4ff,#fff0fb);color:#0f172a}
+    .container{max-width:1100px;margin:32px auto;padding:24px;animation:fadeIn 1s ease}
+
+    @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pop{0%{transform:scale(.95)}100%{transform:scale(1)}}
+
+    header{display:flex;gap:20px;align-items:center;animation:pop .4s ease}
+    .avatar{width:120px;height:120px;border-radius:30px;flex:0 0 120px;overflow:hidden;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:40px;box-shadow:0 10px 25px rgba(0,0,0,0.15)}
+
+    .card{background:var(--card);border-radius:20px;padding:32px;margin-bottom:28px;box-shadow:0 15px 35px rgba(0,0,0,0.12);backdrop-filter:blur(8px);animation:fadeIn .7s ease}
+    h2{margin:0 0 12px 0;font-size:20px;display:flex;align-items:center;gap:8px}
+
+    h2::after{content:"✨";font-size:18px}
+
+    .tag,.skill{transition:transform .2s}
+    .tag:hover,.skill:hover{transform:scale(1.08)}
+
+    .btn{padding:10px 20px;border-radius:14px;border:none;cursor:pointer;font-weight:600;text-decoration:none;display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;box-shadow:0 6px 18px rgba(0,0,0,0.18);transition:transform .25s, box-shadow .25s, background .25s}
+.btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 12px 28px rgba(0,0,0,0.25);background:linear-gradient(135deg,var(--accent2),var(--accent))}
+.btn-outline{background:white;color:var(--accent);border:2px solid var(--accent);box-shadow:0 4px 14px rgba(0,0,0,0.1)}
+.btn-outline:hover{color:white;background:var(--accent);border-color:var(--accent);transform:translateY(-3px) scale(1.05);box-shadow:0 10px 22px rgba(0,0,0,0.18);}
+    .btn:hover{transform:scale(1.05);box-shadow:0 8px 20px rgba(0,0,0,0.15)}
+
+    .project-card,.edu-item,.exp-item{transition:transform .2s}
+    .project-card:hover,.edu-item:hover,.exp-item:hover{transform:translateY(-4px)}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="card" style="display:flex;gap:18px;align-items:center;">
+      <div class="avatar" style="overflow:hidden;border-radius:20px;width:140px;height:140px;padding:0;background:none;box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+  <img src="profile.jpg" alt="Profile Photo" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+      <div class="head-info">
+        <h1>Mohammad Shakir Sufi — Bachelor of Physiotherapy (BPT)</h1>
+        <p class="muted">Final year BPT student | Special interests: musculoskeletal physiotherapy, neurorehabilitation, community health</p>
+        <div class="tags">
+          <span class="tag">Manual Therapy</span>
+          <span class="tag">Exercise Prescription</span>
+          <span class="tag">Gait Analysis</span>
+          <span class="tag">Dry Needling (if trained)</span>
+        </div>
+      </div>
+      <div style="margin-left:auto;display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <a class="btn btn-primary" href="#contact">Contact</a>
+        <a class="btn btn-outline resume-link" href="#" download="YourName_Resume.pdf">Download Resume</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>About me</h2>
+          <p class="muted">I am a compassionate and evidence-based physiotherapy student currently studying at <strong>Lovely Professional University (LPU)</strong>. I have completed rotations in orthopedics, neurology, pediatrics and community physiotherapy. I enjoy designing exercise programmes, using outcome measures, and helping patients return to daily activities.</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Education</h2>
+          <div class="edu-item"><strong>Bachelor of Physiotherapy (BPT)</strong><br>Lovely Professional University (LPU)</div>
+          <div class="edu-item" style="margin-top:8px"><strong>10th</strong> — JK Public School</div>
+          <div class="edu-item" style="margin-top:8px"><strong>12th</strong> — JK Public Higher Secondary</div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Skills</h2>
+          <p class="muted">Communication • Team leadership • Time management</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Sports & Hobbies</h2>
+          <p class="muted">Cricket • Badminton • Football</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Contact</h2>
+          <div class="contact-row"><strong>Email:</strong><span class="muted"> sufishakir27@gmail.com</span></div>
+          <div class="contact-row"><strong>Phone:</strong><span class="muted"> +91 9596118819</span></div>
+          <div class="contact-row"><strong>Location:</strong><span class="muted"> Jammu & Kashmir, India</span></div>
+          <div style="margin-top:12px">
+            <a href="#" class="btn btn-primary">Email Me</a>
+            <a href="#" class="btn btn-outline" style="margin-left:8px">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Quick facts</h2>
+          <p class="muted" style="margin:0">Clinical hours: <strong>820+</strong></p>
+          <p class="muted" style="margin:6px 0 0 0">Languages: <strong>English, Hindi</strong></p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Availability</h2>
+          <p class="muted">Open for internships, part-time clinical assistant roles and student research collaborations.</p>
+          <a class="btn btn-primary" href="#contact" style="margin-top:8px;display:inline-block">Get in touch</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ — Update this page with your details. © <span id="year"></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Small helper: replace initials inside avatar from full name if you want
+    // To customize: rename, replace placeholder texts, add your resume file to the same folder and update the download link.
+  </script>
+</body>
+</html>
